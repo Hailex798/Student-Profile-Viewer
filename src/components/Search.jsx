@@ -24,19 +24,19 @@ const Search = ({ onSearch }) => {
   return (
           <Wrapper>
                 <div className="search-container">
-                <input
-                        type="number"
-                        placeholder="Start Roll No."
-                        value={startRollNo}
-                        onChange={handleStartChange}
-                />
-                <input
-                        type="number"
-                        placeholder="End Roll No."
-                        value={endRollNo}
-                        onChange={handleEndChange}
-                />
-                <button onClick={handleSearchClick}>Display</button>
+                        <input
+                                type="number"
+                                placeholder="Start Roll No."
+                                value={startRollNo}
+                                onChange={handleStartChange}
+                        />
+                        <input
+                                type="number"
+                                placeholder="End Roll No."
+                                value={endRollNo}
+                                onChange={handleEndChange}
+                        />
+                        <button onClick={handleSearchClick}>Display</button>
                 </div>
           </Wrapper>
   );
@@ -48,12 +48,13 @@ const Wrapper = styled.section`
         justify-content: center;
         align-items: center;
         gap: 10px;
-        background-color: #f0f0f0;
+        background-color: black;
         padding: 15px;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         max-width: 600px; /* Limit width for larger screens */
         margin: 0 auto; /* Center align on larger screens */
+        margin-bottom: 4rem;
       }
       
       .search-container input {
@@ -69,11 +70,12 @@ const Wrapper = styled.section`
         padding: 10px 20px;
         font-size: 16px;
         cursor: pointer;
-        background-color: #4CAF50;
+        background-color: #3B2183;
         color: white;
         border: none;
         border-radius: 5px;
         outline: none;
+        font-weight: bold;
         transition: background-color 0.3s ease;
       }
       

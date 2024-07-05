@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Search from './components/Search';
 import DisplayImage from './components/DisplayImage';
 import styled from "styled-components";
+import "./App.css"
 
 const App = () => {
   const [images, setImages] = useState([]);
@@ -21,6 +22,7 @@ const App = () => {
   return (
     <Wrapper>
       <div className="App">
+        <h1 className="heading">Student Profile Viewer</h1>
         <Search onSearch={handleSearch} />
         <DisplayImage images={images} />
       </div>
@@ -34,6 +36,13 @@ const Wrapper = styled.section`
     flex-direction: column;
     align-items: center;
     padding: 20px;
+  }
+  .heading{
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 5rem;
+    color: black;
   }
 `;
 

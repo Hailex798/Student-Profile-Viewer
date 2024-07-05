@@ -7,8 +7,8 @@ const DisplayImages = ({ images }) => {
                 <div className="images-container">
                 {images.map((url, index) => (
                         <div className="image-card" key={index}>
-                        <img src={url} alt={`Roll No. ${index}`} loading="lazy"/>
-                        <div className="roll-no">Roll No. {index}</div>
+                                <img src={url} alt={`Roll No. ${index}`} loading="lazy"/>
+                                <div className="roll-no">Roll No. {index}</div>
                         </div>
                 ))}
                 </div>
@@ -28,7 +28,7 @@ const Wrapper = styled.section`
       
       .image-card {
         width: 100%;
-        background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+        background: black;
         border: 1px solid #ddd;
         border-radius: 8px;
         overflow: hidden;
@@ -51,7 +51,7 @@ const Wrapper = styled.section`
         text-align: center;
         font-size: 14px;
         font-weight: bold;
-        color: #333;
+        color: white;
       }
 `;
 
